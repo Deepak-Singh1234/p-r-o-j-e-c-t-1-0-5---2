@@ -26,13 +26,10 @@ function gotResult(error,results){
         console.error(error);
         
     }
-    else{
-        console.log(results);
-        document.getElementById('span1').innerHTML = results[0].label;
+    
+        else{
+            console.log(results);
+            document.getElementById("span1").innerHTML=results[0].label;
+            document.getElementById("span2").innerHTML=results[0].confidence.toFixed(3);
     }
 }
-
-
-
-
-
